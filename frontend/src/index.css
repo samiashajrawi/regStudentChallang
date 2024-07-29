@@ -1,0 +1,329 @@
+body {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: rgb(252, 251, 249);
+  height: 100%;
+  overflow-y: auto;
+  font-family: Yantramanav, "Helvetica Neue", Arial, sans-serif;
+}
+
+.App {
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+  display: grid;
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.header {
+  height: 72px;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0047ab;
+}
+
+.header > div {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 34px;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ddd;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+div {
+  display: block;
+}
+.main {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 34px;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  padding: 14px 0;
+  color: #4185eb;
+  font-size: 1.75rem;
+  line-height: 31px;
+  font-weight: normal;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 436px;
+  display: block;
+}
+
+form label {
+  color: #003262;
+  margin-bottom: 8px;
+  display: block;
+}
+
+form div {
+  margin-bottom: 24px;
+}
+
+.submit {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 0.9375rem;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: Yantramanav, Helvetica Neue, Arial, sans-serif;
+  min-width: 110px;
+  height: 40px;
+  border: 1px solid;
+  -webkit-transition: all 0.15s linear 0s;
+  transition: all 0.15s linear 0s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: linear-gradient(43.71deg, #0047ab -33.79%, #8e3edb 100.02%);
+  border-color: #0047ab;
+  color: #fcfbf9;
+  height: 70px;
+  font-size: 1.75rem;
+  line-height: 23px;
+  width: 100%;
+}
+
+.submit:hover {
+  background: linear-gradient(270deg, #0db285 6.51%, #4185eb 97.4%);
+}
+
+.name {
+  width: 95%;
+  border: 1px solid;
+  border-color: #c4c4c4;
+  border-radius: 4px;
+  background-color: #fcfbf9;
+  outline-color: #4185eb;
+  height: 48px;
+  color: #003262;
+  padding-left: 8px;
+  font-size: 1.5rem;
+}
+
+.name:disabled {
+  color: #aaa;
+}
+
+form p {
+  color: #003262;
+  font-size: 0.9375rem;
+}
+
+.buttons {
+  display: flex;
+}
+.buttons input {
+  margin: 8px;
+}
+
+/* CSS */
+.button-15 {
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #0077cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-15:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.button-15:hover {
+  background-image: linear-gradient(#51a9ee, #147bcd);
+  border-color: #1482d0;
+  text-decoration: none;
+}
+
+.button-15:active {
+  background-image: linear-gradient(#3d94d9, #0067b9);
+  border-color: #006dbc;
+  outline: none;
+}
+
+.button-15:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
+}
+
+.buttons input:disabled {
+  background: #dddddd;
+  color: #003262;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 300px;
+}
+
+table td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  text-align: left;
+  background-color: #0047ab;
+  color: white;
+}
+
+table tr.preview {
+  background: linear-gradient(270deg, #0db285 6.51%, #4185eb 97.4%);
+  color: #ddd;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-width: 518px;
+  padding: 8px;
+  margin: 8px;
+  align-self: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+.message {
+  background: #f8f8f9;
+  padding: 1em 1.5em;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
+    box-shadow 0.1s ease;
+  transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
+    box-shadow 0.1s ease;
+  border-radius: 0.28571429rem;
+  box-shadow: 0 0 0 1px rgb(34 36 38 / 22%) inset, 0 0 0 0 transparent;
+  visibility: visible;
+  display: block;
+  left: 25%;
+}
+
+.negative.message {
+  box-shadow: 0 0 0 1px #c293a3 inset, 0 0 0 0 transparent;
+  color: #662d2c;
+  background-color: #fff5fc;
+}
+
+.positive.message {
+  box-shadow: 0 0 0 1px #a3c293 inset, 0 0 0 0 transparent;
+  color: #2c662d;
+  background-color: #fcfff5;
+}
+
+.select-container {
+  display: flex;
+  padding: 3px;
+}
+
+.select-container select {
+  border: none;
+  background-color: #fcfbf9;
+  outline-color: #fcfbf9;
+  color: #003262;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.select-container p {
+  color: #003262;
+  font-size: 0.9375rem;
+  padding-right: 5px;
+}
